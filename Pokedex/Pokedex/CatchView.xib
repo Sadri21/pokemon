@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatchView" customModule="Pokedex" customModuleProvider="target">
+            <connections>
+                <outlet property="labelname" destination="jT2-pb-0br" id="jDP-yF-Bvp"/>
+                <outlet property="loadingIndicator" destination="WIb-jE-0OD" id="6fT-em-GjA"/>
+                <outlet property="messageSuccess" destination="BPG-jM-ZLd" id="QF6-Rd-Pf3"/>
+                <outlet property="pokemonImage" destination="YHU-mD-7sE" id="11B-Ug-xxj"/>
+                <outlet property="pokemonName" destination="XKo-8w-LfY" id="08H-nZ-ijt"/>
+                <outlet property="pokemonRealName" destination="7o2-wW-IyM" id="zSO-AL-D6t"/>
+                <outlet property="saveButton" destination="g9z-Nj-nhG" id="cfG-B2-Wub"/>
+                <outlet property="titleSuccess" destination="12V-k9-ddn" id="D2V-4k-RRr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WtY-Nh-leN">
+                    <rect key="frame" x="0.0" y="59" width="393" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeey! You're sucess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12V-k9-ddn">
+                            <rect key="frame" x="111" y="19.333333333333329" width="171" height="21.333333333333329"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoN-a9-oom">
+                            <rect key="frame" x="16" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="k9F-2J-7kJ"/>
+                                <constraint firstAttribute="height" constant="40" id="zOR-lp-J1q"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="Blue"/>
+                    <constraints>
+                        <constraint firstItem="12V-k9-ddn" firstAttribute="centerX" secondItem="WtY-Nh-leN" secondAttribute="centerX" id="2qe-aE-cvM"/>
+                        <constraint firstItem="QoN-a9-oom" firstAttribute="centerY" secondItem="WtY-Nh-leN" secondAttribute="centerY" id="R2b-3c-q5Q"/>
+                        <constraint firstItem="QoN-a9-oom" firstAttribute="leading" secondItem="WtY-Nh-leN" secondAttribute="leading" constant="16" id="Vy0-WU-SJO"/>
+                        <constraint firstItem="12V-k9-ddn" firstAttribute="top" secondItem="WtY-Nh-leN" secondAttribute="top" constant="19.333333333333329" id="czF-a7-NdT"/>
+                        <constraint firstItem="12V-k9-ddn" firstAttribute="centerY" secondItem="WtY-Nh-leN" secondAttribute="centerY" id="pIT-pO-fAm"/>
+                        <constraint firstAttribute="height" constant="60" id="pfW-kJ-LmU"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YHU-mD-7sE">
+                    <rect key="frame" x="0.0" y="135" width="393" height="334"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="YHU-mD-7sE" secondAttribute="height" multiplier="2:1.7" id="rCC-08-EAc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="congratulation you are success catching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPG-jM-ZLd">
+                    <rect key="frame" x="16" y="485" width="306.66666666666669" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pikachu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o2-wW-IyM">
+                    <rect key="frame" x="16" y="510" width="69" height="24"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                    <color key="textColor" name="Yellow"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give the name your pokemon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT2-pb-0br">
+                    <rect key="frame" x="16" y="550" width="222.33333333333334" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XKo-8w-LfY">
+                    <rect key="frame" x="16" y="587" width="361" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="YU7-GC-3Ee"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9z-Nj-nhG" customClass="MyButton" customModule="ViewKit">
+                    <rect key="frame" x="24" y="746" width="345" height="40"/>
+                    <color key="backgroundColor" name="Green"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rql-Y1-Sz0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveOnClick:" destination="-1" eventType="touchUpInside" id="Zlj-YX-XfU"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="WIb-jE-0OD">
+                    <rect key="frame" x="178" y="292" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Blue"/>
+            <constraints>
+                <constraint firstItem="WIb-jE-0OD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0lm-k1-PJM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g9z-Nj-nhG" secondAttribute="trailing" constant="24" id="2lo-ld-3rj"/>
+                <constraint firstItem="BPG-jM-ZLd" firstAttribute="top" secondItem="YHU-mD-7sE" secondAttribute="bottom" constant="16" id="4f3-du-jJW"/>
+                <constraint firstItem="XKo-8w-LfY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="5RO-Ic-v92"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YHU-mD-7sE" secondAttribute="trailing" id="EZU-Zc-Yhc"/>
+                <constraint firstItem="XKo-8w-LfY" firstAttribute="top" secondItem="jT2-pb-0br" secondAttribute="bottom" constant="16" id="Egw-ab-lxP"/>
+                <constraint firstItem="WIb-jE-0OD" firstAttribute="top" secondItem="WtY-Nh-leN" secondAttribute="bottom" constant="173" id="Gvx-oU-Luh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WtY-Nh-leN" secondAttribute="trailing" id="HwC-0f-1Og"/>
+                <constraint firstItem="YHU-mD-7sE" firstAttribute="top" secondItem="WtY-Nh-leN" secondAttribute="bottom" constant="16" id="Me3-jD-prX"/>
+                <constraint firstItem="g9z-Nj-nhG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="PGu-A8-tBc"/>
+                <constraint firstItem="WtY-Nh-leN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PQk-Ms-yca"/>
+                <constraint firstItem="BPG-jM-ZLd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="YTA-Mg-2Ud"/>
+                <constraint firstItem="jT2-pb-0br" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aIK-qf-NUa"/>
+                <constraint firstItem="YHU-mD-7sE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="b3o-6o-tcw"/>
+                <constraint firstItem="WtY-Nh-leN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bd1-2X-2Zg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g9z-Nj-nhG" secondAttribute="bottom" constant="32" id="fdZ-Ed-aUb"/>
+                <constraint firstItem="7o2-wW-IyM" firstAttribute="top" secondItem="BPG-jM-ZLd" secondAttribute="bottom" constant="4" id="hUP-OD-i0k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XKo-8w-LfY" secondAttribute="trailing" constant="16" id="pBR-zg-Xg8"/>
+                <constraint firstItem="jT2-pb-0br" firstAttribute="top" secondItem="7o2-wW-IyM" secondAttribute="bottom" constant="16" id="pEn-ro-qy2"/>
+                <constraint firstItem="7o2-wW-IyM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uli-A7-GKX"/>
+            </constraints>
+            <point key="canvasLocation" x="-25" y="21"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="g9z-Nj-nhG">
+            <size key="intrinsicContentSize" width="36" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Blue">
+            <color red="0.20392156862745098" green="0.34901960784313724" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.2627450980392157" green="0.62745098039215685" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow">
+            <color red="0.99607843137254903" green="0.792156862745098" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "pokemon-logo-png-1428.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
